@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "prettier": "prettier ./src --write",
+    "test": "npx jest",
     "start": "tsc"
   },
   "repository": {

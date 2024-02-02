@@ -1,6 +1,7 @@
-/**
- * Test Case config working fine
- */
-test("test case for add 12",()=>{
-    expect(10+2).toBe(12);
-})
+import {describe, expect, test} from '@jest/globals';
+
+describe('sum module', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(10+3).toBe(13);
+  });
+});
