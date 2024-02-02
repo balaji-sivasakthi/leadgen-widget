@@ -2,9 +2,14 @@
   "name": "leadgen-widget",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "prettier": "prettier ./src --write "
+    "prettier": "prettier ./src --write",
+    "start": "tsc"
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,8 @@
   },
   "homepage": "https://github.com/balaji-sivasakthi/leadgen-widget#readme",
   "devDependencies": {
-    "prettier": "3.2.4"
+    "prettier": "3.2.4",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3"
   }
 }
