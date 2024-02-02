@@ -1,0 +1,19 @@
+{
+  "name": "leadgen-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balaji-sivasakthi/open-lead-widget.git"
+  },
+  "author": "Balaji Sivasakthi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/balaji-sivasakthi/open-lead-widget/issues"
+  },
+  "homepage": "https://github.com/balaji-sivasakthi/open-lead-widget#readme"
+}
