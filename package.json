@@ -8,12 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balaji-sivasakthi/open-lead-widget.git"
+    "url": "git+https://github.com/balaji-sivasakthi/leadgen-widget.git"
   },
   "author": "Balaji Sivasakthi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/balaji-sivasakthi/open-lead-widget/issues"
+    "url": "https://github.com/balaji-sivasakthi/leadgen-widget/issues"
   },
+  "homepage": "https://github.com/balaji-sivasakthi/leadgen-widget#readme",
   "homepage": "https://github.com/balaji-sivasakthi/open-lead-widget#readme"
 }
