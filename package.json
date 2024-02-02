@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier ./src --write "
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,7 @@
     "url": "https://github.com/balaji-sivasakthi/leadgen-widget/issues"
   },
   "homepage": "https://github.com/balaji-sivasakthi/leadgen-widget#readme",
-  "homepage": "https://github.com/balaji-sivasakthi/open-lead-widget#readme"
+  "devDependencies": {
+    "prettier": "3.2.4"
+  }
 }
