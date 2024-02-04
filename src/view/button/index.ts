@@ -8,10 +8,11 @@ export default class Button {
     this.options = options;
     this._element = document.createElement('button');
     this._element.innerHTML = options.name; 
-    this.render()
   }
-
-  render(){
-    this.options.parent.appendChild(this._element)
+  handleClickEvent(onClick: (this: Window, ev: MouseEvent) => any){
+    this._element.addEventListener('click', onClick)
+  }
+  getNode(){
+    return this._element;
   }
 }

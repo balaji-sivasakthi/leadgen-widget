@@ -8,10 +8,11 @@ export default class InputField {
     this.options = options;
     this._element = document.createElement('input');
     this._element.placeholder = options.name; 
-    this.render()
   }
-
-  render(){
-    this.options.parent.appendChild(this._element)
+  getText(){
+    return this._element.value;
+  }
+  getNode(){
+    return this._element;
   }
 }

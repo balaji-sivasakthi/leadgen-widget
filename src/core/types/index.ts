@@ -1,6 +1,5 @@
 export type ViewOptions = {
   name: string
-  parent: HTMLElement
 }
 
 export type ButtonOptions  =  {} & ViewOptions
