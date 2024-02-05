@@ -13,33 +13,34 @@ export default class CoreWidget {
     this._root = document.getElementsByTagName("body")[0];
     this.httpService = new HttpService({
       baseUrl: options?.callbackUrl,
-    })
-    this.init()
+    });
+    this.init();
   }
-  
-  init(){
 
-    const input = new InputField({name: "Email"})
-    const submitButton = new Button({name: "Submit"})
-    
+  init() {
+    const email = new InputField({ name: "Email" });
+    const phone = new InputField({ name: "Phone" });
+    const submitButton = new Button({ name: "Submit" });
+
     const container = new Container({
       attributes: {
-        className: "form-container"
+        className: "form-container",
       },
-      children: [input.getNode(), submitButton.getNode()]
-    })
+      children: [email.getNode(), phone.getNode(), submitButton.getNode()],
+    });
 
     this._root.appendChild(container.getNode());
 
-    submitButton.handleClickEvent(async (event)=>{
+    submitButton.handleClickEvent(async (event) => {
       try {
         const response = await this.httpService.postRequest({
-          email: input.getText()
-         })
-         Logger.d("Form Response", response)
+          email: email.getText(),
+          phone: phone.getText(),
+        });
+        Logger.d("Form Response", response);
       } catch (error) {
-        Logger.e("[HandleClickEvent]", error)
+        Logger.e("[HandleClickEvent]", error);
       }
-    })
+    });
   }
 }

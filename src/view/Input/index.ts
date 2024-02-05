@@ -1,18 +1,18 @@
-import { InputFieldOptions } from "../../core/types"
+import { InputFieldOptions } from "../../core/types";
 
 export default class InputField {
-  private options: InputFieldOptions
-  private _element: HTMLInputElement
+  private options: InputFieldOptions;
+  private _element: HTMLInputElement;
 
   constructor(options: InputFieldOptions) {
     this.options = options;
-    this._element = document.createElement('input');
-    this._element.placeholder = options.name; 
+    this._element = document.createElement("input");
+    this._element.placeholder = options.name;
   }
-  getText(){
+  getText() {
     return this._element.value;
   }
-  getNode(){
+  getNode() {
     return this._element;
   }
 }
