@@ -1,29 +1,28 @@
 type ContainerAttributes = {
-  className: string
-}
+  className: string;
+};
 
 type ContainerOptions = {
   children: HTMLElement[];
-  attributes: ContainerAttributes
-}
+  attributes: ContainerAttributes;
+};
 
 export default class Container {
   private children: HTMLElement[];
   attributes: ContainerAttributes;
   container: HTMLDivElement;
-  
 
   constructor(options: ContainerOptions) {
-    this.attributes = options.attributes
-    this.container = document.createElement('div')
+    this.attributes = options.attributes;
+    this.container = document.createElement("div");
     this.container.className = options.attributes.className;
-    this.children = options.children
-    this.render()
+    this.children = options.children;
+    this.render();
   }
-  getNode(){
+  getNode() {
     return this.container;
   }
-  render(){
-    this.container.append(...this.children)
+  render() {
+    this.container.append(...this.children);
   }
 }
