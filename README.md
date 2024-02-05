@@ -11,6 +11,29 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 - **Lead Capture**: Efficiently capture leads through a user-friendly interface.
 - **Extensible**: Expand functionality by adding custom plugins and integrations.
 
+## Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/balaji-sivasakthi/leadgen-widget.git
+   ```
+2. **Include CSS and JavaScript Files:**
+   ```js
+   <link rel="stylesheet" href="leadgen-widget/css/leadgen-widget.css">
+   <script src="leadgen-widget/js/leadgen-widget.js"></script>```
+   
+3. **Initialize the Widget:**
+   ```js
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize LeadGen Widget
+      new LeadGenWidget({
+        callbackUrl: 'http://example.com/form-data'
+      });
+    });
+   </script>
+   ```
+
 ## License
 
 LeadGen Widget is licensed under the [MIT License](notion://www.notion.so/balajisivasakthi/LICENSE).
