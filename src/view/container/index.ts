@@ -3,7 +3,7 @@ type ContainerAttributes = {
 };
 
 type ContainerOptions = {
-  children: HTMLElement[];
+  children?: HTMLElement[];
   attributes: ContainerAttributes;
 };
 
@@ -18,6 +18,12 @@ export default class Container {
     this.container.className = options.attributes.className;
     this.children = options.children;
     this.render();
+  }
+  show(){
+    this.container.style.display = "block"
+  }
+  hide(){
+    this.container.style.display = "none"
   }
   getNode() {
     return this.container;

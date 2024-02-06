@@ -1,5 +1,6 @@
 import { Logger } from "../utils/logger";
 import InputField from "../view/Input";
+import Text from "../view/Text";
 import Button from "../view/button";
 import Container from "../view/container";
 import { HttpService } from "./http/http-common";
@@ -20,13 +21,37 @@ export default class CoreWidget {
   init() {
     const email = new InputField({ name: "Email" });
     const phone = new InputField({ name: "Phone" });
-    const submitButton = new Button({ name: "Submit" });
+   
+    const closeLabel  =  new Text({
+      name: "X",
+      type: "span",
+      className:"close"
+    })
+    
+    const closeBox = new Container({
+      attributes: {
+        className: 'close'
+      },
+      children: [
+        closeLabel.getNode()
+      ]
+    });
 
+    closeBox.getNode().addEventListener('click', () => {
+      container.hide()
+    })
+
+    const submitButton = new Button({ name: "Submit" });
     const container = new Container({
       attributes: {
         className: "form-container",
       },
-      children: [email.getNode(), phone.getNode(), submitButton.getNode()],
+      children: [
+        closeBox.getNode(),
+        email.getNode(),
+        phone.getNode(),
+        submitButton.getNode(),
+      ],
     });
 
     this._root.appendChild(container.getNode());
