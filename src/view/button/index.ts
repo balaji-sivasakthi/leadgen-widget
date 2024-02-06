@@ -7,6 +7,7 @@ export default class Button {
   constructor(options: ButtonOptions) {
     this.options = options;
     this._element = document.createElement("button");
+    this._element.className = options?.className;
     this._element.innerHTML = options.name;
   }
   handleClickEvent(onClick: (this: Window, ev: MouseEvent) => any) {
