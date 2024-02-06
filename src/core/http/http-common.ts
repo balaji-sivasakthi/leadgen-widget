@@ -7,7 +7,6 @@ type HttpOptions = {
 export class HttpService {
   options: HttpOptions;
   constructor(options: HttpOptions) {
-    Logger.d("Http Service 11", options);
     this.options = options;
   }
 

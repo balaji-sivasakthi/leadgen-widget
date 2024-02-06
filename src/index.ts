@@ -6,8 +6,3 @@ export class LeadGenWidget extends CoreWidget {
     super(options);
   }
 }
-
-// LendGen's Usage Example
-new LeadGenWidget({
-  callbackUrl: "http://localhost:3000/form-data",
-});

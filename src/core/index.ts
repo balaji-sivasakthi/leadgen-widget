@@ -1,8 +1,9 @@
+import { numberOnly, validateMobile } from "../utils";
 import { Logger } from "../utils/logger";
-import InputField from "../view/Input";
-import Text from "../view/Text";
-import Button from "../view/button";
-import Container from "../view/container";
+import InputField from "../ui/Input";
+import Text from "../ui/Text";
+import Button from "../ui/button";
+import Container from "../ui/container";
 import { HttpService } from "./http/http-common";
 import { WidgetOptions } from "./types";
 
@@ -19,29 +20,51 @@ export default class CoreWidget {
   }
 
   init() {
-    const email = new InputField({ name: "Email" });
-    const phone = new InputField({ name: "Phone" });
-   
-    const closeLabel  =  new Text({
-      name: "X",
-      type: "span",
-      className:"close"
-    })
-    
-    const closeBox = new Container({
-      attributes: {
-        className: 'close'
-      },
-      children: [
-        closeLabel.getNode()
-      ]
+    const errorLabel = new Text({
+      name: "",
+      type: "p",
+      className: "error",
     });
 
-    closeBox.getNode().addEventListener('click', () => {
-      container.hide()
-    })
+    const email = new InputField({ name: "Email" });
+    const phone = new InputField({
+      name: "Mobile",
+      type: "text",
+      maxLength: 10,
+    });
+
+    phone.handleInputChange((event) => {
+      const mobileNumber = (event.target as HTMLInputElement).value;
+      if (!validateMobile(mobileNumber) && !!mobileNumber.length) {
+        errorLabel.setText("Please enter a valid Mobile Number");
+      } else {
+        errorLabel.setText("");
+      }
+    });
+
+    phone.handleOnKeyPress((event) => {
+      if (!numberOnly(event)) event.preventDefault();
+    });
+
+    const closeLabel = new Text({
+      name: "X",
+      type: "span",
+      className: "close",
+    });
+
+    const closeBox = new Container({
+      attributes: {
+        className: "close",
+      },
+      children: [closeLabel.getNode()],
+    });
+
+    closeBox.getNode().addEventListener("click", () => {
+      container.hide();
+    });
 
     const submitButton = new Button({ name: "Submit" });
+
     const container = new Container({
       attributes: {
         className: "form-container",
@@ -50,6 +73,7 @@ export default class CoreWidget {
         closeBox.getNode(),
         email.getNode(),
         phone.getNode(),
+        errorLabel.getNode(),
         submitButton.getNode(),
       ],
     });
