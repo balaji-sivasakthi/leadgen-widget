@@ -10,8 +10,8 @@
   "scripts": {
     "prettier": "prettier ./src --write",
     "test": "npx jest",
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack --mode=production",
+    "watch": "webpack --watch --mode=development"
   },
   "repository": {
     "type": "git",
