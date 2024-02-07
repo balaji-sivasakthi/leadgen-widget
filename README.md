@@ -20,7 +20,8 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 2. **Include CSS and JavaScript Files:**
    ```js
    <link rel="stylesheet" href="leadgen-widget/css/leadgen-widget.css">
-   <script src="leadgen-widget/js/leadgen-widget.js"></script>```
+   <script src="leadgen-widget/js/leadgen-widget.js"></script>
+   ```
    
 3. **Initialize the Widget:**
    ```js
