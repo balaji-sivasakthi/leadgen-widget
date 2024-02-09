@@ -16,6 +16,8 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/balaji-sivasakthi/leadgen-widget.git
+
+   npm run build
    ```
 2. **Include CSS and JavaScript Files:**
    ```js
@@ -34,7 +36,31 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
     });
    </script>
    ```
+## Example
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../src//assets//css/style.css" />
+  </head>
+  <body>
 
+    <script type="module" src="./main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Initialize LeadGen Widget
+          new LeadGenWidget({
+            callbackUrl: 'http://example.com/form-data'
+          });
+        });
+     </script>
+  </body>
+</html>
+
+```
 ## License
 
 LeadGen Widget is licensed under the [MIT License](notion://www.notion.so/balajisivasakthi/LICENSE).
