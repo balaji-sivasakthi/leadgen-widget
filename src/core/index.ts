@@ -61,6 +61,7 @@ export default class CoreWidget {
 
     closeBox.getNode().addEventListener("click", () => {
       container.hide();
+      formOverlay.hide()
     });
 
     const submitButton = new Button({ name: "Submit" });
@@ -77,8 +78,13 @@ export default class CoreWidget {
         submitButton.getNode(),
       ],
     });
-
-    this._root.appendChild(container.getNode());
+    const formOverlay = new Container({
+      attributes: {
+        className: 'form-overlay'
+      },
+      children: [container.getNode()]
+    })
+    this._root.appendChild(formOverlay.getNode());
 
     submitButton.handleClickEvent(async (event) => {
       try {
