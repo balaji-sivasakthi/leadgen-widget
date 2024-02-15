@@ -1,4 +1,4 @@
-# LeadGen Widget
+<img width="876" alt="Screenshot 2024-02-15 at 11 29 22 PM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/dead9f92-4f6c-465e-8ff6-933aa61dbbd4"># LeadGen Widget
 
 ## Overview
 
@@ -63,7 +63,7 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 ```
 
 ## Screenshot
-<img width="876" alt="Screenshot 2024-02-15 at 11 29 22 PM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/da9e7990-cb31-430b-8931-08e0b9ae9c7f">
+<img width="957" alt="Screenshot 2024-02-16 at 12 18 28 AM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/ae45a24c-bfaa-4cd6-8014-35cc17957ff1">
 
 ## License
 
