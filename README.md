@@ -1,4 +1,4 @@
-<img width="876" alt="Screenshot 2024-02-15 at 11 29 22 PM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/dead9f92-4f6c-465e-8ff6-933aa61dbbd4"># LeadGen Widget
+# LeadGen Widget
 
 ## Overview
 
