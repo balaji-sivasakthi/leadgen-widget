@@ -54,7 +54,7 @@ export default class CoreWidget {
 
     const closeBox = new Container({
       attributes: {
-        className: "close",
+        className: "close-container",
       },
       children: [closeLabel.getNode()],
     });
