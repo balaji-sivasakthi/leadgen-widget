@@ -35,11 +35,16 @@
 
 .form-container button {
   width: 100%;
-  background-color: blue;
+  background-color: rgb(66, 66, 255);
   outline: none;
-  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
   color: white;
   cursor: pointer;
+}
+.form-container button:hover {
+  background-color: rgb(80, 80, 254);
 }
 
 .form-container .close {
