@@ -61,6 +61,10 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 </html>
 
 ```
+
+## Screenshot
+<img width="876" alt="Screenshot 2024-02-15 at 11 29 22 PM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/da9e7990-cb31-430b-8931-08e0b9ae9c7f">
+
 ## License
 
 LeadGen Widget is licensed under the [MIT License](notion://www.notion.so/balajisivasakthi/LICENSE).
