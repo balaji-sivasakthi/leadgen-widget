@@ -20,7 +20,7 @@
   padding: 30px;
   width: 400px;
   transform: translate(-50%, -50%);
-  border: solid gray .1px;
+  border: solid rgb(177, 177, 177) .1px;
   border-radius: 5px;
   z-index: 99999;
   background-color: white;
@@ -28,9 +28,11 @@
 
 .form-container input {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 10px;
   outline: none;
+  border: 1.2px  #dfdfdf solid;
+  border-radius: 5px;
 }
 
 .form-container button {
@@ -47,17 +49,27 @@
   background-color: rgb(80, 80, 254);
 }
 
-.form-container .close {
+.form-container .close-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: gray;
+  background-color: rgb(107, 107, 107);
   color: aliceblue;
   cursor: pointer;
-  padding: 6px;
   border-radius: 100%;
   font-family: sans-serif;
+  padding: 5px;
+  width: 28px;
+  height: 28px;
 }
+
+.form-container .close-container:hover {
+  background-color: gray;
+}
+
 .error {
   color: red;
 }
