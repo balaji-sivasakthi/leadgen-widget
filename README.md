@@ -10,7 +10,7 @@ Welcome to LeadGen Widget, an open-source, pluggable widget designed to enhance 
 - **Customizable**: Tailor the widget's appearance and behavior to match your brand and user experience.
 - **Lead Capture**: Efficiently capture leads through a user-friendly interface.
 - **Extensible**: Expand functionality by adding custom plugins and integrations.
-- 
+
 ## Screenshot
 <img width="957" alt="Screenshot 2024-02-16 at 12 18 28 AM" src="https://github.com/balaji-sivasakthi/leadgen-widget/assets/65065614/ae45a24c-bfaa-4cd6-8014-35cc17957ff1">
 
